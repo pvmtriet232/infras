@@ -1,5 +1,14 @@
 # AWS architecture 
+```mermaid
+flowchart TD
+    <!-- A[Christmas]|Get money| B(Go shopping) --> -->
+    B --> C{root}
+    C -->|One| D[Database]
+    C -->|Two| E[Net working]
+    C -->|Three| F[Auto Scaling]
+```
 ## step 1: init terraform cloud
+#### **`terraform.tf`**
 ```
 terraform {
   cloud {
@@ -13,13 +22,6 @@ terraform {
 }
 ```
 ## step 2: 
-```mermaid
-flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-```
+- add 
 
 
