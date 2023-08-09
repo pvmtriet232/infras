@@ -1,7 +1,7 @@
 # AWS architecture 
 ```mermaid
 flowchart TD
-    C{root} --> output --> test
+    C{root}
     
     C -->|module| N[Networking]
     C -->|module| D[(Database)]
