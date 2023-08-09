@@ -1,7 +1,6 @@
 # AWS architecture 
 ```mermaid
 flowchart TD
-    <!-- A[Christmas]|Get money| B(Go shopping) --> -->
     B --> C{root}
     C -->|One| D[Database]
     C -->|Two| E[Net working]
