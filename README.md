@@ -15,7 +15,7 @@ flowchart TD
     A --- iip[IIP]
     A --- alb[ALBs]
 ```
-## step 1: init terraform cloud
+## Init terraform cloud
 #### **`terraform.tf`**
 ```
 terraform {
@@ -29,7 +29,7 @@ terraform {
   }
 }
 ```
-## step 2: 
+##  
 - add 
 
 
