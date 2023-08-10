@@ -1,4 +1,4 @@
-# AWS architecture 
+# terraform modules architecture 
 ```mermaid
 flowchart TD
     C{root} 
