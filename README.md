@@ -1,27 +1,19 @@
 # AWS architecture 
 ```mermaid
 flowchart TD
-    C{root}
+    C{root} 
     
     C -->|module| N[Networking]
     C -->|module| D[(Database)]
+    C -->|module| A[ASGs]
 
 
-    N --dir--> vpc-internet
-    subgraph vpc-internet
-    aug[AutoScaling]
-    aug --> iip[iip]
-    aug --> alb[ALB]
-    sg[SG]
-    end 
+    N --> vpcs
+    N --> SG[SG]
+    N --> R[Route53]
 
-    N --dir--> vpc-intranet
-    subgraph vpc-intranet
-    aug2[AutoScaling]
-    aug2 --> iip2[iip]
-    aug2 --> alb2[ALB]
-    sg2[SG]
-    end
+    A --- iip[IIP]
+    A --- alb[ALBs]
 ```
 ## step 1: init terraform cloud
 #### **`terraform.tf`**
